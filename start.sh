@@ -10,3 +10,6 @@ pipenv run python -m django --version
 # on the name provided by the user
 pipenv run django-admin startproject "$1"
 
+# Now we run the server on the background
+./init.sh "$1" & 
+
